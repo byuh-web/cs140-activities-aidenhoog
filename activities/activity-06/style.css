@@ -1,0 +1,13 @@
+header h1{
+    background-color: #4ca2af;
+    color: white;
+}
+#navigation {
+    background-color: #c800ff;
+    color: white;
+    text-decoration: underline;
+}
+.question {
+    font-weight: bold;
+    text-decoration: underline;
+}
