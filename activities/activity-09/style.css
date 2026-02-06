@@ -16,16 +16,66 @@ header {
     text-align: center;
 }
 body {
-    background-image: url("68351f17044b892efeebeea9_AD_4nXcJjf50XvWI0OJh19WClqLw9P2cwEEuu1bV007UORdPZxjSO3yoS8jPDyF5m7XvRDTHl3Zbosq6lg8oEL0qVpjWyV1up_6SRiXvxsJbgUKux3Sjpv_vycw5--IdkpQIq9SfU65k.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(six-seven.jpeg), url(68351f17044b892efeebeea9_AD_4nXcJjf50XvWI0OJh19WClqLw9P2cwEEuu1bV007UORdPZxjSO3yoS8jPDyF5m7XvRDTHl3Zbosq6lg8oEL0qVpjWyV1up_6SRiXvxsJbgUKux3Sjpv_vycw5--IdkpQIq9SfU65k.png);
+    background-size: contain, cover;
+    background-position: right, left;
+    background-repeat: no-repeat, repeat;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
-a:active {
-    color: rgb(255, 0, 0);
+a.active {
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
 }
 a:visited {
     color: rgb(165, 165, 165);
 }
 a:unvisited {
     color: black;
+}
+main {
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.ozark {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.ozark2 {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+footer {
+    text-align: center;
+    background-color: #b8c7b1;
+    padding: 10px;
+    margin-top: 20px;
+}
+.kansas-city {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.kansas-city2 {    
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.adam-ondi-ahman {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.st-louis {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.corn-field {
+    display: block;
+    margin: auto;
+    width: 100%;
 }
