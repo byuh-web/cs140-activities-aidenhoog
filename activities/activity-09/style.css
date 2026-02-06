@@ -1,0 +1,31 @@
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+h1 {
+    text-align: center;
+    background-color: aliceblue;
+}
+header {
+    background-color: #b8c7b1;
+    text-align: center;
+}
+body {
+    background-image: url("68351f17044b892efeebeea9_AD_4nXcJjf50XvWI0OJh19WClqLw9P2cwEEuu1bV007UORdPZxjSO3yoS8jPDyF5m7XvRDTHl3Zbosq6lg8oEL0qVpjWyV1up_6SRiXvxsJbgUKux3Sjpv_vycw5--IdkpQIq9SfU65k.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a:active {
+    color: rgb(255, 0, 0);
+}
+a:visited {
+    color: rgb(165, 165, 165);
+}
+a:unvisited {
+    color: black;
+}
