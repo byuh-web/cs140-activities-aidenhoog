@@ -35,9 +35,6 @@ a.active {
 a:visited {
     color: rgb(165, 165, 165);
 }
-a:unvisited {
-    color: black;
-}
 .ozark {
     display: block;
     margin: auto;
