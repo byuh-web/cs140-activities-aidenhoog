@@ -1,0 +1,41 @@
+
+aside {
+    float: left;
+    width: 200px;
+}
+.nav_container{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    gap: 20px;
+}
+nav a:hover {
+    background-color: rgb(129, 186, 183);
+}
+img {
+    width: auto ;
+    height: auto;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+.cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.footer-links {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+}
