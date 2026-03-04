@@ -3,46 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike | Just Do It</title>
+    <title>Nike | Shop Modern Athletics</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div id="cart-notification" class="notification">
+        Added to Bag! <span class="view-bag">View Bag</span>
+    </div>
+
+    <div id="size-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Footwear Size Guide</h2>
+            <table class="size-chart">
+                <tr><th>US - Men's</th><th>UK</th><th>EU</th><th>CM</th></tr>
+                <tr><td>8</td><td>7</td><td>41</td><td>26</td></tr>
+                <tr><td>9</td><td>8</td><td>42.5</td><td>27</td></tr>
+                <tr><td>10</td><td>9</td><td>44</td><td>28</td></tr>
+                <tr><td>11</td><td>10</td><td>45</td><td>29</td></tr>
+                <tr><td>12</td><td>11</td><td>46</td><td>30</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="pre-header">
+        <div class="brand-icons">
+            <span class="jordan-icon">Jumpman</span>
+            <span class="converse-icon">Converse</span>
+        </div>
+        <div class="pre-nav-links">
+            <button id="theme-toggle" class="text-btn">Dark Mode</button> |
+            <a href="#">Find a Store</a> | 
+            <a href="#">Help</a> | 
+            <a href="#">Sign In</a>
+        </div>
+    </div>
+
     <nav class="navbar">
-    <div class="logo">
-        <a href="#">
-            <svg class="swoosh" width="80px" height="60px" viewBox="0 0 24 24" fill="#111" xmlns="http://www.w3.org/2000/svg">
-                <path d="M21 12.0001C15.9 12.0001 5.99998 15.0001 1.99998 17.0001C1.99998 17.0001 5.99998 9.00006 22 7.00006C22 7.00006 21 12.0001 21 12.0001Z"/>
-            </svg>
-        </a>
-    </div>
-    <ul class="nav-links">
-        <li><a href="#">New & Featured</a></li>
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">Kids</a></li>
-        <li><a href="#">Sale</a></li>
-    </ul>
-    <div class="nav-icons">
-        <button class="nav-btn">Search</button>
-        <button class="nav-btn">Cart (0)</button>
-    </div>
-</nav>
+        <div class="logo">
+            <a href="#">
+                <img class="swoosh" src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo" width="60px">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Sale</a></li>
+        </ul>
+        <div class="nav-icons">
+            <span id="bag-count" style="cursor: pointer; font-weight: 600;">Bag (0)</span>
+        </div>
+    </nav>
 
     <header class="slider-container">
         <div class="slider">
-            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1920&q=80');">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1920&q=80');">
                 <div class="hero-content">
                     <p>Just In</p>
                     <h1>AIR MAX EXCEE</h1>
-                    <button class="btn-black">Shop Now</button>
+                    <button class="btn-primary">Shop Now</button>
                 </div>
             </div>
-            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=1920&q=80');">
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=1920&q=80');">
                 <div class="hero-content">
                     <p>New Arrival</p>
                     <h1>STREET CLASSIC</h1>
-                    <button class="btn-black">Discover More</button>
+                    <button class="btn-primary">Discover More</button>
                 </div>
             </div>
         </div>
@@ -54,25 +82,31 @@
         <h2>Featured Styles</h2>
         <div class="product-grid">
             <div class="product-card">
-                <div class="img-container">
-                    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80" alt="Air Force 1">
-                </div>
+                <div class="img-container"><img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80" alt="Air Force 1"></div>
                 <h3>Air Force 1 '07</h3>
-                <p>Men's Shoes</p>
+                <p>Men's Shoes - $110</p>
+                <div class="card-actions">
+                    <button class="add-to-bag btn-primary">Add to Bag</button>
+                    <button class="size-guide-btn text-btn">Size Guide</button>
+                </div>
             </div>
             <div class="product-card">
-                <div class="img-container">
-                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" alt="Dunk Low">
-                </div>
+                <div class="img-container"><img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" alt="Dunk Low"></div>
                 <h3>Nike Dunk Low</h3>
-                <p>Women's Shoes</p>
+                <p>Women's Shoes - $115</p>
+                <div class="card-actions">
+                    <button class="add-to-bag btn-primary">Add to Bag</button>
+                    <button class="size-guide-btn text-btn">Size Guide</button>
+                </div>
             </div>
             <div class="product-card">
-                <div class="img-container">
-                    <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80" alt="Metcon 9">
-                </div>
+                <div class="img-container"><img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80" alt="Metcon 9"></div>
                 <h3>Nike Metcon 9</h3>
-                <p>Training Shoes</p>
+                <p>Training Shoes - $150</p>
+                <div class="card-actions">
+                    <button class="add-to-bag btn-primary">Add to Bag</button>
+                    <button class="size-guide-btn text-btn">Size Guide</button>
+                </div>
             </div>
         </div>
     </section>
@@ -84,28 +118,15 @@
                 <ul>
                     <li><a href="#">Find A Store</a></li>
                     <li><a href="#">Become A Member</a></li>
-                    <li><a href="#">Send Us Feedback</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h4>Help</h4>
                 <ul>
-                    <li><a href="#">Get Help</a></li>
                     <li><a href="#">Order Status</a></li>
                     <li><a href="#">Shipping & Delivery</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#">About Nike</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Nike, Inc. All Rights Reserved</p>
         </div>
     </footer>
 
