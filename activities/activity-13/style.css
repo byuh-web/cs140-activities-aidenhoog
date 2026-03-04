@@ -209,3 +209,25 @@ body {
     font-size: 11px;
     color: #7e7e7e;
 }
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.swoosh {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.swoosh:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+/* Ensure the navbar height accommodates the logo nicely */
+.navbar {
+    height: 60px; /* Standard Nike header height */
+    padding: 0 40px;
+}
