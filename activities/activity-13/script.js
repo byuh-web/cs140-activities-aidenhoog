@@ -77,3 +77,36 @@ window.addEventListener('click', (e) => {
         modal.style.display = 'none';
     }
 });
+
+// --- 5. Smooth Scroll Logic ---
+const scrollBtns = document.querySelectorAll('.scroll-btn');
+const targetSection = document.getElementById('featured-section');
+
+scrollBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        targetSection.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start' // Aligns the top of the section with the top of the viewport
+        });
+    });
+});
+
+// --- 6. Back to Top Button Logic ---
+const backToTopBtn = document.getElementById('back-to-top');
+
+// Listen for scrolling
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        backToTopBtn.classList.add('show');
+    } else {
+        backToTopBtn.classList.remove('show');
+    }
+});
+
+// Smooth scroll back to top when clicked
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
