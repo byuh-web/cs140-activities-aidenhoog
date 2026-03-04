@@ -10,7 +10,7 @@
 
     <nav class="navbar">
         <div class="logo">
-            <svg height="60" width="60" viewBox="0 0 24 24"><path d="M21 12l-18 5 4-4-4-4 18 3z"/></svg>
+            <svg height="60" width="60" viewBox="0 0 24 24" fill="#111"><path d="M21 12l-18 5 4-4-4-4 18 3z"/></svg>
         </div>
         <ul class="nav-links">
             <li><a href="#">New & Featured</a></li>
@@ -20,40 +20,91 @@
             <li><a href="#">Sale</a></li>
         </ul>
         <div class="nav-icons">
-            <span>Search</span>
-            <span>Cart (0)</span>
+            <button class="nav-btn">Search</button>
+            <button class="nav-btn">Cart (0)</button>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <p>New Arrival</p>
-            <h1>NIKE AIR MAX</h1>
-            <p>Extreme comfort. Revolutionary style.</p>
-            <button class="btn-black">Shop Now</button>
+    <header class="slider-container">
+        <div class="slider">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1920&q=80');">
+                <div class="hero-content">
+                    <p>Just In</p>
+                    <h1>AIR MAX EXCEE</h1>
+                    <button class="btn-black">Shop Now</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=1920&q=80');">
+                <div class="hero-content">
+                    <p>New Arrival</p>
+                    <h1>STREET CLASSIC</h1>
+                    <button class="btn-black">Discover More</button>
+                </div>
+            </div>
         </div>
+        <button class="slider-btn prev">&#10094;</button>
+        <button class="slider-btn next">&#10095;</button>
     </header>
 
     <section class="featured">
         <h2>Featured Styles</h2>
         <div class="product-grid">
             <div class="product-card">
-                <div class="img-placeholder"></div>
-                <h3>Air Force 1</h3>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80" alt="Air Force 1">
+                </div>
+                <h3>Air Force 1 '07</h3>
                 <p>Men's Shoes</p>
             </div>
             <div class="product-card">
-                <div class="img-placeholder"></div>
-                <h3>Dunk Low</h3>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" alt="Dunk Low">
+                </div>
+                <h3>Nike Dunk Low</h3>
                 <p>Women's Shoes</p>
             </div>
             <div class="product-card">
-                <div class="img-placeholder"></div>
-                <h3>Metcon 9</h3>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80" alt="Metcon 9">
+                </div>
+                <h3>Nike Metcon 9</h3>
                 <p>Training Shoes</p>
             </div>
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Find A Store</a></li>
+                    <li><a href="#">Become A Member</a></li>
+                    <li><a href="#">Send Us Feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Get Help</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Nike</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nike, Inc. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
