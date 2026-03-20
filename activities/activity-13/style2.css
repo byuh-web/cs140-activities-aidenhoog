@@ -1,8 +1,3 @@
-/* =========================================
-   Requirement 1: Mobile-First Approach
-   Base styles apply to Small Devices (Mobiles)
-   ========================================= */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -18,13 +13,12 @@ header, footer {
     padding: 1.5rem 0;
 }
 
-/* Requirement 3: Vertical navigation menu for Small Devices */
 nav ul {
     padding: 0;
     margin: 0;
     background-color: #34495e;
     display: flex;
-    flex-direction: column; /* Stacks links vertically */
+    flex-direction: column;
 }
 
 nav ul li a {
@@ -46,12 +40,11 @@ img {
     margin: 0 auto;
 }
 
-/* Requirement 2: Single-column layout for Small Devices */
 .container {
     display: flex;
-    flex-direction: column; /* Stacks sections in one column */
+    flex-direction: column;
     padding: 1.5rem;
-    gap: 1.5rem; /* Space between the stacked columns */
+    gap: 1.5rem;
 }
 
 .column {
@@ -61,16 +54,9 @@ img {
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-/* =========================================
-   Requirement 5: Media Queries (At least two)
-   ========================================= */
-
-/* MEDIA QUERY 1: Medium Devices (Tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-    
-    /* Requirement 3: Horizontal navigation for Medium/Large devices */
     nav ul {
-        flex-direction: row; /* Aligns links horizontally */
+        flex-direction: row;
         justify-content: center;
     }
     
@@ -78,36 +64,22 @@ img {
         border-bottom: none;
     }
 
-    /* Requirement 2: Two-column layout for Medium Devices */
     .container {
-        flex-direction: row; /* Switch layout to a row */
-        flex-wrap: wrap;     /* Allow columns to wrap to the next line */
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .column {
-        /* Takes up 50% width minus the gap space */
         flex: 1 1 calc(50% - 1.5rem); 
-    }
-
-    /* Makes the 3rd section take full width on tablets so it doesn't look awkward */
-    #gallery {
-        flex: 1 1 100%; 
     }
 }
 
-/* MEDIA QUERY 2: Large Devices (Desktops, 1024px and up) */
 @media screen and (min-width: 1024px) {
-    
-    /* Requirement 2: Three-column layout for Large Devices */
     .container {
-        flex-wrap: nowrap; /* Prevents wrapping, forcing all 3 into one row */
+        flex-wrap: nowrap; 
     }
 
     .column {
-        flex: 1; /* All three columns take exactly equal space (1/3 each) */
-    }
-    
-    #gallery {
-        flex: 1; /* Resets the gallery so it shares space equally with the other two */
+        flex: 1;
     }
 }
