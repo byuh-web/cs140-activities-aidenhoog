@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    font-family: comic sans ms, cursive, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #ff00ee;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer {
+    background-color: #ff00ee;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+fieldset {
+    border: 2px solid #ff00ee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+legend {
+    background-color: #ff00ee;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #333;
+    padding-top: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.radio-group {
+    padding-top: 8px;
+}
+
+.radio-group input[type="radio"], 
+.checkbox-row input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+label.inline-label {
+    width: auto;
+    text-align: left;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.checkbox-row {
+    padding-left: 170px;
+    align-items: center;
+}
+
+.submit-row {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit {
+    background-color: #4027ae;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+    background-color: #502196;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .form-row > label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+    }
+
+    .checkbox-row {
+        padding-left: 0;
+        flex-direction: row;
+    }
+
+    .submit {
+        width: 100%;
+        padding: 18px;
+        font-size: 1.3em;
+    }
+}
