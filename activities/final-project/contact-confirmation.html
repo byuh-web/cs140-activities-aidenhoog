@@ -39,7 +39,7 @@
             const sentenceParts = [];
             if (name) sentenceParts.push(`Thanks, ${name}!`);
             else sentenceParts.push('Thanks for your message!');
-            if (email) sentenceParts.push(`We will reply to ${email} as soon as possible.`);
+            if (email) sentenceParts.push(`I won't reply to ${email} as soon as possible.`);
             if (subject) sentenceParts.push(`Subject: ${subject}.`);
             text.textContent = sentenceParts.join(' ');
         }
