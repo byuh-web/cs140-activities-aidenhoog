@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Final Project</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="chanel.html">Chanel</a>
+            <a href="louisvuitton.html">Louis Vuitton</a>
+            <a href="gucci.html">Gucci</a>
+            <a href="table.html">Comparison</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-section">
+            <h2>Submitted</h2>
+            <p id="confirmation-text">Thanks for submitting. I will not be contacting you honestly!</p>
+            <p>Return to the <a href="contact.html">contact page</a> or browse the rest of the site.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Aiden Hoogestraat</p>
+    </footer>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+        const email = params.get('email');
+        const subject = params.get('subject');
+        const text = document.getElementById('confirmation-text');
+
+        if (name || email || subject) {
+            const sentenceParts = [];
+            if (name) sentenceParts.push(`Thanks, ${name}!`);
+            else sentenceParts.push('Thanks for your message!');
+            if (email) sentenceParts.push(`We will reply to ${email} as soon as possible.`);
+            if (subject) sentenceParts.push(`Subject: ${subject}.`);
+            text.textContent = sentenceParts.join(' ');
+        }
+    </script>
+</body>
+</html>
